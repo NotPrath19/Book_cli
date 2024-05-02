@@ -1,0 +1,14 @@
+<div class="update">
+    <form [formGroup]="bookForm" class="book-form" (ngSubmit)="update()">
+    <input type="hidden" [ngModel]="book.id" formControlName="id">
+        <mat-form-field>
+        <mat-label>title</mat-label>
+    <input matInput [ngModel]="book.title" formControlName="title">
+</mat-form-field>
+<mat-form-field>
+<mat-label>author</mat-label>
+<input matInput [ngModel]="book.author" formControlName="author">
+</mat-form-field>
+    <button mat-raised-button type="submit"  color="Primary">Submit</button>
+</form>
+</div>

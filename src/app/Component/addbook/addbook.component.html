@@ -1,0 +1,13 @@
+<div class="addbook">
+    <form [formGroup]="book" class="book-form" (ngSubmit)="saveBook()">
+<mat-form-field>
+    <mat-label>title</mat-label>
+    <input matInput placeholder="Game of Thrones" formControlName="title">
+</mat-form-field>
+<mat-form-field>
+<mat-label>author</mat-label>
+<input matInput placeholder="Prath19" formControlName="author">
+</mat-form-field>
+    <button mat-raised-button type="submit" >Submit</button>
+</form>
+</div>

@@ -1,0 +1,9 @@
+<app-header></app-header>
+<mat-drawer-container class="drawer-container">
+    <mat-drawer mode="side" opened class="drawer">
+     <br><br><a href="#" mat-raised-button  routerLink="/addbook">Add</a>
+     <br><br><a href="#" mat-raised-button  routerLink="/viewbook">View</a>
+    </mat-drawer>
+    <mat-drawer-content><br><br><br><router-outlet></router-outlet></mat-drawer-content>
+  </mat-drawer-container>
+<app-footer></app-footer>
